@@ -185,6 +185,24 @@ section{padding:100px 0}
 
 @media(max-width:800px){.contact-wrapper{grid-template-columns:1fr;gap:40px}}
 
+/* ===== SHOWCASE ===== */
+.showcase{background:var(--bg2)}
+.project-block{margin-bottom:60px;padding:36px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);transition:var(--transition)}
+.project-block:last-child{margin-bottom:0}
+.project-block:hover{border-color:rgba(99,102,241,.15);box-shadow:0 8px 40px rgba(0,0,0,.2)}
+.project-header{margin-bottom:28px}
+.project-badge{display:inline-block;padding:4px 14px;border-radius:100px;font-size:.78rem;font-weight:600;color:var(--accent,#a78bfa);background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.2);margin-bottom:12px}
+.project-header h3{font-size:1.4rem;font-weight:800;margin-bottom:8px}
+.project-header p{color:var(--text2);font-size:.95rem;max-width:600px}
+.project-screenshots{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.screenshot-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:var(--transition);position:relative}
+.screenshot-card::before{content:'';position:absolute;top:0;left:0;right:0;height:24px;background:rgba(0,0,0,.4);z-index:1;display:flex;align-items:center}
+.screenshot-card::after{content:'● ● ●';position:absolute;top:4px;left:10px;font-size:8px;letter-spacing:3px;color:rgba(255,255,255,.3);z-index:2}
+.screenshot-card img{width:100%;height:auto;display:block;transition:var(--transition)}
+.screenshot-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(99,102,241,.15);border-color:rgba(99,102,241,.2)}
+.screenshot-card:hover img{transform:scale(1.02)}
+@media(max-width:600px){.project-screenshots{grid-template-columns:1fr}}
+
 /* ===== FOOTER ===== */
 .footer{padding:40px 0;border-top:1px solid var(--border)}
 .footer-content{display:flex;align-items:center;justify-content:space-between}
@@ -193,5 +211,6 @@ section{padding:100px 0}
 @media(max-width:600px){.footer-content{flex-direction:column;gap:12px;text-align:center}}
 
 /* ===== SCROLL ANIMATIONS ===== */
-.service-card,.process-step,.portfolio-card,.price-card{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
-.service-card.visible,.process-step.visible,.portfolio-card.visible,.price-card.visible{opacity:1;transform:translateY(0)}
+.service-card,.process-step,.price-card,.project-block{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
+.service-card.visible,.process-step.visible,.price-card.visible,.project-block.visible{opacity:1;transform:translateY(0)}
+

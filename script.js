@@ -95,7 +95,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.service-card,.process-step,.price-card').forEach(el => {
+document.querySelectorAll('.service-card,.process-step,.price-card,.project-block').forEach(el => {
     observer.observe(el);
 });
 

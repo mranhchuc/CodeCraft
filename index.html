@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CodeCraft VN - Dịch vụ lập trình chuyên nghiệp. Web, App, Bot, AI. Chỉ từ 500K. Fullstack từ A-Z, bảo hành, demo ngay.">
+    <title>CodeCraft VN | Dịch Vụ Lập Trình Chuyên Nghiệp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>CodeCraft<span class="logo-bracket">/&gt;</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#services">Dịch Vụ</a>
+                <a href="#pricing">Bảng Giá</a>
+                <a href="#process">Quy Trình</a>
+
+                <a href="#contact">Liên Hệ</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Đang nhận dự án mới
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Biến ý tưởng</span>
+                <span class="title-line gradient-text">thành sản phẩm số</span>
+                <span class="title-line">chỉ từ <span class="price-highlight">500K</span></span>
+            </h1>
+            <p class="hero-desc">
+                Fullstack Developer chuyên nhận làm Web, App, Bot, AI — từ cơ bản đến phức tạp. 
+                Báo giá rõ ràng, có bảo hành, demo ngay.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    Inbox Ngay
+                </a>
+                <a href="#services" class="btn btn-secondary">Xem Dịch Vụ</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="50">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Dự án</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="100">0</span><span class="stat-plus">%</span>
+                    <span class="stat-label">Bảo hành</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="24">0</span><span class="stat-plus">/7</span>
+                    <span class="stat-label">Hỗ trợ</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="code-title">project.js</span>
+                </div>
+                <div class="code-body">
+                    <pre><code id="typingCode"></code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Dịch vụ</span>
+                <h2 class="section-title">Tôi có thể làm <span class="gradient-text">tất cả</span></h2>
+                <p class="section-desc">Từ landing page đơn giản đến hệ thống AI phức tạp</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon" style="--accent: #6366f1;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3>Website</h3>
+                    <p>Web bán hàng, giới thiệu dịch vụ, quản lý nội bộ, theo dõi đơn hàng & trạng thái.</p>
+                    <ul class="service-tags">
+                        <li>Landing Page</li><li>E-Commerce</li><li>Dashboard</li><li>CMS</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon" style="--accent: #8b5cf6;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
+                    </div>
+                    <h3>Mobile App</h3>
+                    <p>App quản lý, theo dõi dữ liệu, chạy đa thiết bị iOS & Android.</p>
+                    <ul class="service-tags">
+                        <li>iOS</li><li>Android</li><li>Cross-platform</li><li>PWA</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon" style="--accent: #06b6d4;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Bot Tự Động</h3>
+                    <p>Bot Telegram, Zalo auto rep – nhận đơn – gửi thông báo tự động 24/7.</p>
+                    <ul class="service-tags">
+                        <li>Telegram</li><li>Zalo</li><li>Auto Reply</li><li>Notification</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon" style="--accent: #f43f5e;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.57-3.25 3.93a1 1 0 0 0-.75.97V13"/><circle cx="12" cy="17" r="1"/><path d="M5 12a7 7 0 0 1 14 0"/><path d="M2 12a10 10 0 0 1 20 0"/></svg>
+                    </div>
+                    <h3>Hệ Thống AI</h3>
+                    <p>AI trả lời tự động, phân tích file Excel, hỗ trợ khách hàng thông minh.</p>
+                    <ul class="service-tags">
+                        <li>ChatBot AI</li><li>Data Analysis</li><li>NLP</li><li>Automation</li>
+                    </ul>
+                </div>
+                <div class="service-card fullstack-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon" style="--accent: #10b981;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+                    </div>
+                    <h3>Fullstack A–Z</h3>
+                    <p>Frontend (UI đẹp) + Backend (API – Database) – Trọn gói từ thiết kế đến triển khai.</p>
+                    <ul class="service-tags">
+                        <li>React/Next.js</li><li>Node.js</li><li>Database</li><li>Deploy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Bảng giá</span>
+                <h2 class="section-title">Gói dịch vụ <span class="gradient-text">phù hợp</span></h2>
+                <p class="section-desc">Báo giá minh bạch, không phát sinh chi phí ẩn</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div class="price-tier">Starter</div>
+                    <div class="price-amount"><span class="currency">₫</span>500K<span class="price-unit">~</span></div>
+                    <p class="price-desc">Landing page, trang giới thiệu đơn giản</p>
+                    <ul class="price-features">
+                        <li><span class="check">✓</span> 1-3 trang tĩnh</li>
+                        <li><span class="check">✓</span> Responsive mobile</li>
+                        <li><span class="check">✓</span> Hiệu ứng đẹp mắt</li>
+                        <li><span class="check">✓</span> Tối ưu SEO cơ bản</li>
+                        <li><span class="check">✓</span> Bàn giao source code</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Liên Hệ</a>
+                </div>
+                <div class="price-card featured">
+                    <div class="price-badge">Phổ biến nhất</div>
+                    <div class="price-tier">Professional</div>
+                    <div class="price-amount"><span class="currency">₫</span>2-5M<span class="price-unit"></span></div>
+                    <p class="price-desc">Web app, dashboard, hệ thống quản lý</p>
+                    <ul class="price-features">
+                        <li><span class="check">✓</span> Frontend + Backend</li>
+                        <li><span class="check">✓</span> Database thiết kế</li>
+                        <li><span class="check">✓</span> API đầy đủ</li>
+                        <li><span class="check">✓</span> Authentication</li>
+                        <li><span class="check">✓</span> Admin panel</li>
+                        <li><span class="check">✓</span> Deploy hỗ trợ</li>
+                        <li><span class="check">✓</span> Bảo hành 3 tháng</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Inbox Ngay</a>
+                </div>
+                <div class="price-card">
+                    <div class="price-tier">Enterprise</div>
+                    <div class="price-amount"><span class="currency">₫</span>5M+<span class="price-unit"></span></div>
+                    <p class="price-desc">Hệ thống phức tạp, AI, đa nền tảng</p>
+                    <ul class="price-features">
+                        <li><span class="check">✓</span> Mọi thứ trong Pro</li>
+                        <li><span class="check">✓</span> Mobile app iOS/Android</li>
+                        <li><span class="check">✓</span> Tích hợp AI/ML</li>
+                        <li><span class="check">✓</span> Bot automation</li>
+                        <li><span class="check">✓</span> Hệ thống scale</li>
+                        <li><span class="check">✓</span> Bảo hành 6 tháng</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Liên Hệ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Quy trình</span>
+                <h2 class="section-title">Làm việc <span class="gradient-text">chuyên nghiệp</span></h2>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Trao đổi yêu cầu</h3>
+                        <p>Lắng nghe ý tưởng, phân tích nhu cầu, tư vấn giải pháp tối ưu.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Báo giá & Timeline</h3>
+                        <p>Báo giá chi tiết, rõ ràng từng hạng mục. Cam kết thời gian hoàn thành.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Thiết kế & Lập trình</h3>
+                        <p>Code sạch, hiện đại. Cập nhật tiến độ thường xuyên cho khách hàng.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Bàn giao & Bảo hành</h3>
+                        <p>Test kỹ, bàn giao source code, hướng dẫn sử dụng, bảo hành miễn phí.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA / Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper" style="grid-template-columns:1fr;max-width:600px;margin:0 auto;">
+                <div class="contact-info" style="text-align:center;">
+                    <h2 class="section-title">Bạn có dự án cần làm?<br><span class="gradient-text">Inbox ngay!</span></h2>
+                    <p>Mô tả ý tưởng của bạn, mình sẽ tư vấn và báo giá miễn phí trong vòng 1 giờ.</p>
+                    <div class="contact-channels">
+                        <a href="https://m.me/" class="channel-item" target="_blank">
+                            <div class="channel-icon messenger">💬</div>
+                            <div>
+                                <strong>Messenger</strong>
+                                <span>Phản hồi nhanh nhất</span>
+                            </div>
+                        </a>
+                        <a href="https://zalo.me/" class="channel-item" target="_blank">
+                            <div class="channel-icon zalo">📱</div>
+                            <div>
+                                <strong>Zalo</strong>
+                                <span>Chat trực tiếp</span>
+                            </div>
+                        </a>
+                        <a href="https://t.me/" class="channel-item" target="_blank">
+                            <div class="channel-icon telegram">✈️</div>
+                            <div>
+                                <strong>Telegram</strong>
+                                <span>@CodeCraftVN</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>CodeCraft<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p>© 2026 CodeCraft VN. Code with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

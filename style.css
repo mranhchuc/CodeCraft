@@ -194,8 +194,8 @@ section{padding:100px 0}
 .project-badge{display:inline-block;padding:4px 14px;border-radius:100px;font-size:.78rem;font-weight:600;color:var(--accent,#a78bfa);background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.2);margin-bottom:12px}
 .project-header h3{font-size:1.4rem;font-weight:800;margin-bottom:8px}
 .project-header p{color:var(--text2);font-size:.95rem;max-width:600px}
-.project-screenshots{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
-.screenshot-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:var(--transition);position:relative}
+.project-screenshots{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,250px));gap:20px;justify-content:center}
+.screenshot-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:var(--transition);position:relative;max-width:250px}
 .screenshot-card::before{content:'';position:absolute;top:0;left:0;right:0;height:24px;background:rgba(0,0,0,.4);z-index:1;display:flex;align-items:center}
 .screenshot-card::after{content:'● ● ●';position:absolute;top:4px;left:10px;font-size:8px;letter-spacing:3px;color:rgba(255,255,255,.3);z-index:2}
 .screenshot-card img{width:100%;height:auto;display:block;transition:var(--transition)}
